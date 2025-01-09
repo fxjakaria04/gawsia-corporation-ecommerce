@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: aaa;
+    src: url(https://fonts.googleapis.com/css2?family=Aclonica&display=swap)
+}
+.aaa {
+    font-family: aaa;
+}
+
 .parent {
     @apply w-11/12 m-auto;
 }
