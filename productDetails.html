@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gawsia Corporation</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./public/css/output.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body class="bg-zinc-100">
+        <!-- top navbar -->
+        <div class="w-full py-2 flex items-center justify-between md:pl-10 bg-gray-600 text-white">
+            <span class="flex items-center gap-4">
+                <img src="public/img/Vector (1).svg" alt="" class="h-4">
+                <span class="text-sm font-bold">SUMMER SALE: UP TO 5% OFF SELECTED ITEMS</span>
+            </span>
+            <span class="md:flex items-center gap-4 hidden">
+                <img src="public/img/Vector (1).svg" alt="" class="h-4">
+                <span class="text-sm font-bold">SUMMER SALE: UP TO 5% OFF SELECTED ITEMS</span>
+            </span>
+            <span class="lg:flex items-center gap-4 hidden">
+                <img src="public/img/Vector (1).svg" alt="" class="h-4">
+                <span class="text-sm font-bold">SUMMER SALE: UP TO 5% OFF SELECTED ITEMS</span>
+            </span>
+        </div>
+        <!-- navbar -->
+        <nav class="w-full bg-white lg:bg-gradient-to-r from-[#892890] to-[#501559] py-3.5 lg:py-[18px] shadow">
+            <div class="w-[95%] md:w-[98%] m-auto flex justify-between">
+                <!-- responsive icons -->
+                <div class="flex items-center gap-x-4 lg:hidden">
+                    <button class="w-5">
+                        <img src="public/img/Button-menu.svg" alt="">
+                    </button>
+                    <button class="w-5">
+                        <img src="public/img/search.svg" alt="">
+                    </button>
+                </div>
+                <!-- desk logo -->
+                <div class="flex items-center gap gap-6">
+                    <a href="index.html">
+                        <img src="public/img/GawsiaBazarlogo.png" alt="" class="h-9 hidden lg:inline">
+                        <img src="public/img/gawsia-logo-black.png" alt="" class="w-28 lg:hidden">
+                    </a>
+                    <div class="lg:flex flex-col items-center text-white text-sm hidden">
+                        <span class="font-normal">Available 24/7 at</span>
+                        <span class="font-bold">0184-1222-236</span>
+                    </div>
+                </div>
+                <!-- search -->
+                <div class="w-1/3 lg:flex items-center justify-between bg-gray-100 rounded-3xl px-2 h-12 hidden">
+                    <input type="text" name="" id=""
+                        class="text-[#808080] font-normal flex-grow outline-none bg-transparent">
+                    <img src="public/img/search.svg" alt="">
+                </div>
+                <!-- icon area -->
+                <div class="items-center justify-end text-black md:text-white flex gap-4 lg:gap-9">
+                    <a href="#wishlist" class="hidden lg:flex flex-col gap-y-2 items-center justify-center">
+                        <div class="h-6 w-full flex items-center justify-center">
+                            <img src="public/img/wishlinst.png" alt="">
+                        </div>
+                        <span class="text-sm font-normal">Wish Lists</span>
+                    </a>
+                    <a href="#wishlist" class="hidden lg:flex flex-col gap-y-2 items-center justify-center">
+                        <div class="h-6 w-full flex items-center justify-center">
+                            <img src="public/img/GiftCards.svg" alt="">
+                        </div>
+                        <span class="text-sm font-normal">Gift Cards</span>
+                    </a>
+                    <a href="#wishlist" class="flex flex-col gap-y-2 items-center justify-center">
+                        <div class="h-6 w-full flex items-center justify-center">
+                            <img src="public/img/SignIn.png" alt="" class="hidden lg:inline">
+                            <img src="public/img/user-black.svg" alt="" class="lg:hidden">
+                        </div>
+                        <span class="text-sm font-normal lg:inline hidden">Sign In</span>
+                    </a>
+                    <a href="#wishlist" class="flex flex-col gap-y-2 items-center justify-center">
+                        <div class="h-6 w-full flex items-center justify-center">
+                            <img src="public/img/Cart.svg" alt="" class="hidden lg:inline">
+                            <img src="public/img/cart-black.svg" alt="" class="lg:hidden">
+                        </div>
+                        <span class="text-sm font-normal md:inline hidden">Cart</span>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar end -->
+        <main class="my-10 px-6">
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    <div class="max-w-2xl mx-auto">
+                        <!-- Main Image -->
+                        <div class="relative aspect-[3/4] mb-4">
+                            <img id="mainImage"
+                                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Frnslw2283EqXpJkNWtNxCVgle6pY0.png"
+                                alt="Dress" class="w-full h-full object-cover rounded-lg shadow-lg">
+                        </div>
+
+                        <!-- Bottom Carousel -->
+                        <div class="relative">
+                            <div class="overflow-hidden">
+                                <div id="carouselTrack" class="flex transition-transform duration-300 gap-2">
+                                    <div class="min-w-[33.333%] px-1">
+                                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Frnslw2283EqXpJkNWtNxCVgle6pY0.png"
+                                            alt="White Dress"
+                                            class="w-full aspect-[3/4] object-cover rounded cursor-pointer hover:opacity-75 transition-opacity"
+                                            onclick="updateMainImage(0)">
+                                    </div>
+                                    <div class="min-w-[33.333%] px-1">
+                                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Frnslw2283EqXpJkNWtNxCVgle6pY0.png"
+                                            alt="Yellow Dress"
+                                            class="w-full aspect-[3/4] object-cover rounded cursor-pointer hover:opacity-75 transition-opacity"
+                                            onclick="updateMainImage(1)">
+                                    </div>
+                                    <div class="min-w-[33.333%] px-1">
+                                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Frnslw2283EqXpJkNWtNxCVgle6pY0.png"
+                                            alt="Pink Dress"
+                                            class="w-full aspect-[3/4] object-cover rounded cursor-pointer hover:opacity-75 transition-opacity"
+                                            onclick="updateMainImage(2)">
+                                    </div>
+                                    <div class="min-w-[33.333%] px-1">
+                                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Frnslw2283EqXpJkNWtNxCVgle6pY0.png"
+                                            alt="Green Dress"
+                                            class="w-full aspect-[3/4] object-cover rounded cursor-pointer hover:opacity-75 transition-opacity"
+                                            onclick="updateMainImage(3)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <button onclick="moveCarousel(-1)"
+                                class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button onclick="moveCarousel(1)"
+                                class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div x-data="{ activeTab: 'tab1' }" class="w-full">
+                    <!-- Tabs -->
+                    <div class="border-b border-gray-200">
+                        <nav class="-mb-px flex items-center" aria-label="Tabs">
+                            <button @click="activeTab = 'tab1'"
+                                :class="activeTab === 'tab1' ? 'text-blue-600 border-blue-600' : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                                class="w-full border rounded-l-lg py-2 px-6 border-[#501559] font-bold text-[#501559]">
+                                Retail Sale
+                            </button>
+                            <button @click="activeTab = 'tab2'"
+                                :class="activeTab === 'tab2' ? 'text-blue-600 border-blue-600' : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                                class="w-full border rounded-r-lg py-2 px-6 border-[#501559] font-bold text-[#501559]">
+                                Wholesale
+                            </button>
+
+                        </nav>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="mt-4">
+                        <div x-show="activeTab === 'tab1'" class="p-4 bg-gray-50 border border-gray-200 rounded">
+                            <!-- content -->
+                            <div class="space-y-2">
+                                <h1 class=" text-lg md:text-xl font-bold">
+                                    {{__('Taree Sharee (With Blauze) & Accessories For
+                                                        Sale')}}
+                                </h1>
+                                <p class="flex items-center py-4 ps-6 space-x-2">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.6738 0.978912C10.6738 0.142123 9.59618 -0.172983 9.12171 0.520545C4.76758 6.88492 10.9551 7.1714 10.9551 10.2652C10.9551 11.5177 9.93154 12.5313 8.6752 12.5149C7.43875 12.4989 6.45508 11.4682 6.45508 10.2316V7.2254C6.45508 6.46241 5.52446 6.09249 4.99848 6.64518C4.05746 7.63399 3.08008 9.32761 3.08008 11.3902C3.08008 15.1121 6.10812 18.1402 9.83008 18.1402C13.552 18.1402 16.5801 15.1121 16.5801 11.3902C16.5801 5.4034 10.6738 4.60489 10.6738 0.978912Z"
+                                            fill="#E95144" />
+                                    </svg>
+
+                                    <span class="text-sm text-[#E95144]">
+                                        8 sold in last 15 hours
+                                    </span>
+                                </p>
+
+                                <p class="text-sm text-wrap">
+                                    Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis.
+                                    Pellentesque diam dolor, elementum etos lobortis...
+                                </p>
+
+                                <div class="space-y-2">
+                                    <p class="text-sm">
+                                        Vender: <span class="ms-2">Shororitu Boutiques</span>
+                                    </p>
+                                    <p class="text-sm">
+                                        SKU: <span class="ms-2">KJSU-100008</span>
+                                    </p>
+                                    <p class="text-sm space-x-4">
+                                        Availability: <span
+                                            class=" ms-2 px-2 py-1 rounded-full font-bold border border-[#E10600] text-[#E10600]">Stock
+                                            Out</span>
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center space-x-2">
+                                    <h1 class="text-xl font-bold line-through">৳900</h1>
+                                    <h1 class="text-xl font-bold text-[#E10600]">৳6900</h1>
+                                </div>
+
+                                <p class="text-[#E10600] text-sm">Please hurry! Only 9 left in stock</p>
+                                <div class="w-64 bg-gray-200 h-1.5 dark:bg-gray-700">
+                                    <div class="bg-gradient-to-tr from-[#D62828] to-[#FFBD00] h-1.5" style="width: 45%">
+                                    </div>
+                                </div>
+
+                                <form action="">
+                                    <div class="space-y-4">
+                                        <div class="space-y-2">
+                                            <p class="font-semibold">Size: <span class="font-normal">Free</span></p>
+
+                                            <div class="flex items-center space-x-4">
+                                                <!-- Free Option -->
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-1" type="radio" name="default-radio"
+                                                        class="w-4 h-4 text-[#501559] bg-gray-100 border-gray-300 focus:ring-[#501559] checked:bg-[#501559] checked:border-[#501559]">
+                                                    <label for="default-radio-1"
+                                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                        Free
+                                                    </label>
+                                                </div>
+                                                <!-- XL Option -->
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-2" type="radio" name="default-radio"
+                                                        class="w-4 h-4 text-[#501559] bg-gray-100 border-gray-300 focus:ring-[#501559] checked:bg-[#501559] checked:border-[#501559]"
+                                                        checked>
+                                                    <label for="default-radio-2"
+                                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                        XL
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="flex items-center space-x-4">
+                                            <label class="flex flex-col items-center">
+                                                <input type="radio" name="color" value="black" class="hidden peer" />
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-black border-2 border-white ring-2 ring-gray-300 peer-checked:ring-black peer-checked:ring-4"></span>
+                                            </label>
+                                            <label class="flex flex-col items-center">
+                                                <input type="radio" name="color" value="white" class="hidden peer" />
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-gray-200 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-500 peer-checked:ring-4"></span>
+                                            </label>
+                                            <label class="flex flex-col items-center">
+                                                <input type="radio" name="color" value="blue" class="hidden peer" />
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-gray-600 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-700 peer-checked:ring-4"></span>
+                                            </label>
+                                            <label class="flex flex-col items-center">
+                                                <input type="radio" name="color" value="orange" class="hidden peer" />
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-orange-400 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-orange-500 peer-checked:ring-4"></span>
+                                            </label>
+                                        </div>
+
+                                        <div x-data="{ quantity: 1 }">
+                                            <label for="quantity"
+                                                class="block text-sm font-medium text-gray-700 mb-2">Quantity:</label>
+                                            <div class="inline-flex items-center border rounded-lg">
+                                                <!-- Decrease Button -->
+                                                <button @click="if (quantity > 1) quantity--"
+                                                    class="px-3 py-2 text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-l-lg">
+                                                    &minus;
+                                                </button>
+
+                                                <!-- Quantity Display -->
+                                                <input type="text" id="quantity" x-model="quantity"
+                                                    class="w-12 text-center border-0 focus:ring-0" readonly>
+
+                                                <!-- Increase Button -->
+                                                <button @click="quantity++"
+                                                    class="px-3 py-2 text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-r-lg">
+                                                    &#43;
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+
+                                        <section class="flex items-center space-x-4">
+                                            <div class="flex items-center space-x-2">
+                                                <svg width="26" height="17" viewBox="0 0 26 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <rect x="0.830078" y="0.668213" width="25" height="16"
+                                                        fill="url(#pattern0_30_3066)" />
+                                                    <defs>
+                                                        <pattern id="pattern0_30_3066"
+                                                            patternContentUnits="objectBoundingBox" width="1"
+                                                            height="1">
+                                                            <use xlink:href="#image0_30_3066"
+                                                                transform="scale(0.04 0.0625)" />
+                                                        </pattern>
+                                                        <image id="image0_30_3066" width="25" height="16"
+                                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAQCAYAAADj5tSrAAAAWElEQVQ4jWNUVlaexsDAkMlAOzCdCdmCO3fuMFCbDTKfiYY+gINRS6hjiYqKClY2qWrwWkJNAMon/2ltyWjqGsSWMDIy0t6S//9pl8hAlkynmekgwMAwHQD5bhxCu6stFwAAAABJRU5ErkJggg==" />
+                                                    </defs>
+                                                </svg>
+                                                <p class="text-sm">
+                                                    Size Guide
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center space-x-2">
+                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g clip-path="url(#clip0_30_2392)">
+                                                        <rect x="0.830078" y="0.668213" width="18" height="18"
+                                                            fill="url(#pattern0_30_2392)" />
+                                                    </g>
+                                                    <defs>
+                                                        <pattern id="pattern0_30_2392"
+                                                            patternContentUnits="objectBoundingBox" width="1"
+                                                            height="1">
+                                                            <use xlink:href="#image0_30_2392"
+                                                                transform="scale(0.0555556)" />
+                                                        </pattern>
+                                                        <clipPath id="clip0_30_2392">
+                                                            <rect width="18" height="18" fill="white"
+                                                                transform="translate(0.830078 0.668213)" />
+                                                        </clipPath>
+                                                        <image id="image0_30_2392" width="18" height="18"
+                                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAD10lEQVQ4jU2UT2xUVRTGf+e+9+ZNB2aw08G2aCpVkVpIsEBU8D+IqSVEgahLNQYXxsjCrUtduSHRxBhcYNSFIhghEQiKJCImNrVUYAimaKAwbanQ6Uw7fTPvvXvMawvxJCc3uTf3y/m+c74j7xxYRzmq8VBbxM5HM5SrEfUwenFpxu9dnks9rKrtYARxS3bwfL+9WjkqGflOjWBKiqkrxOCyEEaS1B5r5X3E6avWY6wFY5J3F22ErfGNWo84vKnIUYT3EAZu/58/LI2YrWnDSd/RPlVhNlKmwxgQFIOWK1CL5n+49KrHz1i2IfMILhYyjtfVP+5+XjhLbseqkCtlQyXU8Voc/5jDGxRE7VSlh5hncU0bHshVslqRfaT1CYGiG6cCX2Xx3iZo+XowxhWlt6t+KJji3VgZvlW6qE3o36cZPuQa2+UaqE8+js1njmM3max/Y3PKTDze4k9xd9by6RlzYLRuX7grx7DqLZg5qKT+Sya0O5zruh8fpGkObEPssdkUy1t2RtbHcyZoXzR2PdcU7/7jmsM/NwV3QcG5SEAXLWRWd2uzjpFWJExoOi87Fzf+8MHFSt+dV6pPETiN/etbfv9icES5GQRsWxFAIgg+asro8WnMRQ/GZVomTJec9daaP13kbyflilNuq4YtVGc7uRR1D1wIt1CPUqRDh8NHCny0cR+PTZzEfDKK+cvDVj3I2IToGWIBB0hrwTUmgNwUpCPiap4rxa3gWag3uFyr8OXbb1Ca6OaRlR/T0XkZUwixjTRoDI6AFWiIuGTCMeqpApM5nGL7Wjt0B1oARiu8de4Qq1jGIE9zadDwZLiXgjvDChmDVNMacjG6OBlr/dfVUyv7Gcuspuwngj6vHSzrKv5SckbHmGIJVpS01mheNMmZ0v0UpmZ4IDfSptn8Vkox4imyJOo3eqH5W6Z9SAF52siwp7U0TH56BDsnwELTVFjs1fDSFnLskUywDHeB2nXnG6PNnCCvv9olkOTyoaGXmmZmDlalcG9inf/3PyP1zvHU0v39dt0rUEH8BqT0N5z4J5c8gb0hu8SxpzrOncuvLp6gKvntMe4GRzgGDCV2UjVrPCd6LufPtp+eeTAxOD1+cdLUw1047qw7N2gRF5qHR1/rHj751SzZbICPQ6OtldSryY6wKLWwg8gafAKanSqng+7plsbk68vdkfM4XmLr+R1gbHw4JPNMg8wxJaQJw9I5TytCgyBspx4VUIlISXTcs+GmGPM9Mm//2/souVAxAyi9gUY7OiXdl0bWB2irKzWJbW68Vr+nP+MOHImUgwnbZMHMBfAfct24toplOLEAAAAASUVORK5CYII=" />
+                                                    </defs>
+                                                </svg>
+
+                                                <p class="text-sm">
+                                                    Compare Color
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center space-x-2">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_30_3745)">
+                                                        <path
+                                                            d="M5.20508 9.79321C4.74095 9.79321 4.29583 9.97759 3.96764 10.3058C3.63945 10.634 3.45508 11.0791 3.45508 11.5432C3.45508 12.0073 3.63945 12.4525 3.96764 12.7806C4.29583 13.1088 4.74095 13.2932 5.20508 13.2932C5.66921 13.2932 6.11433 13.1088 6.44252 12.7806C6.7707 12.4525 6.95508 12.0073 6.95508 11.5432C6.95508 11.0791 6.7707 10.634 6.44252 10.3058C6.11433 9.97759 5.66921 9.79321 5.20508 9.79321ZM17.4551 9.79321C16.9909 9.79321 16.5458 9.97759 16.2176 10.3058C15.8895 10.634 15.7051 11.0791 15.7051 11.5432C15.7051 12.0073 15.8895 12.4525 16.2176 12.7806C16.5458 13.1088 16.9909 13.2932 17.4551 13.2932C17.9192 13.2932 18.3643 13.1088 18.6925 12.7806C19.0207 12.4525 19.2051 12.0073 19.2051 11.5432C19.2051 11.0791 19.0207 10.634 18.6925 10.3058C18.3643 9.97759 17.9192 9.79321 17.4551 9.79321Z"
+                                                            fill="#FFA726" />
+                                                        <path
+                                                            d="M17.8926 8.48062C17.8926 2.92437 4.76758 4.84937 4.76758 8.48062C4.76758 9.26812 4.76758 12.0681 4.76758 12.8556C4.76758 16.4869 7.69883 19.4181 11.3301 19.4181C14.9613 19.4181 17.8926 16.4869 17.8926 12.8556C17.8926 12.0681 17.8926 9.26812 17.8926 8.48062Z"
+                                                            fill="#FFB74D" />
+                                                        <path
+                                                            d="M11.3301 1.48071C7.21758 1.48071 3.89258 4.80571 3.89258 8.91821C3.89258 9.44321 3.89258 10.4057 3.89258 10.4057L4.76758 11.1057V9.79321L13.9551 5.50571L17.8926 9.79321V11.1057L18.7676 10.4057C18.7676 10.4057 18.7676 9.48696 18.7676 8.91821C18.7676 5.41821 16.2738 1.48071 11.3301 1.48071Z"
+                                                            fill="#FF5722" />
+                                                        <path
+                                                            d="M14.3926 10.6682C14.1605 10.6682 13.938 10.7604 13.7739 10.9245C13.6098 11.0886 13.5176 11.3111 13.5176 11.5432C13.5176 11.7753 13.6098 11.9978 13.7739 12.1619C13.938 12.326 14.1605 12.4182 14.3926 12.4182C14.6246 12.4182 14.8472 12.326 15.0113 12.1619C15.1754 11.9978 15.2676 11.7753 15.2676 11.5432C15.2676 11.3111 15.1754 11.0886 15.0113 10.9245C14.8472 10.7604 14.6246 10.6682 14.3926 10.6682ZM8.26758 10.6682C8.03551 10.6682 7.81295 10.7604 7.64886 10.9245C7.48477 11.0886 7.39258 11.3111 7.39258 11.5432C7.39258 11.7753 7.48477 11.9978 7.64886 12.1619C7.81295 12.326 8.03551 12.4182 8.26758 12.4182C8.49964 12.4182 8.7222 12.326 8.8863 12.1619C9.05039 11.9978 9.14258 11.7753 9.14258 11.5432C9.14258 11.3111 9.05039 11.0886 8.8863 10.9245C8.7222 10.7604 8.49964 10.6682 8.26758 10.6682Z"
+                                                            fill="#784719" />
+                                                        <path
+                                                            d="M19.6426 10.6682C19.3801 10.6682 19.2051 10.8432 19.2051 11.1057V8.04321C19.2051 4.19321 16.0551 1.04321 12.2051 1.04321H9.14258C8.88008 1.04321 8.70508 1.21821 8.70508 1.48071C8.70508 1.74321 8.88008 1.91821 9.14258 1.91821H12.2051C15.5738 1.91821 18.3301 4.67446 18.3301 8.04321V12.4182C18.3301 12.6807 18.5051 12.8557 18.7676 12.8557C19.0301 12.8557 19.2051 12.6807 19.2051 12.4182V13.2932C19.2051 14.9995 17.8488 16.3557 16.1426 16.3557H11.3301C11.0676 16.3557 10.8926 16.5307 10.8926 16.7932C10.8926 17.0557 11.0676 17.2307 11.3301 17.2307H16.1426C18.3301 17.2307 20.0801 15.4807 20.0801 13.2932V11.1057C20.0801 10.8432 19.9051 10.6682 19.6426 10.6682Z"
+                                                            fill="#757575" />
+                                                        <path
+                                                            d="M19.6426 9.79321H19.2051C18.7238 9.79321 18.3301 10.187 18.3301 10.6682V12.4182C18.3301 12.8995 18.7238 13.2932 19.2051 13.2932H19.6426C20.1238 13.2932 20.5176 12.8995 20.5176 12.4182V10.6682C20.5176 10.187 20.1238 9.79321 19.6426 9.79321ZM11.3301 15.9182C11.098 15.9182 10.8755 16.0104 10.7114 16.1745C10.5473 16.3386 10.4551 16.5611 10.4551 16.7932C10.4551 17.0253 10.5473 17.2478 10.7114 17.4119C10.8755 17.576 11.098 17.6682 11.3301 17.6682C11.5621 17.6682 11.7847 17.576 11.9488 17.4119C12.1129 17.2478 12.2051 17.0253 12.2051 16.7932C12.2051 16.5611 12.1129 16.3386 11.9488 16.1745C11.7847 16.0104 11.5621 15.9182 11.3301 15.9182Z"
+                                                            fill="#37474F" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_30_3745">
+                                                            <rect width="21" height="21" fill="white"
+                                                                transform="translate(0.830078 0.168213)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+
+
+                                                <p class="text-sm">
+                                                    Ask An Expert
+                                                </p>
+                                            </div>
+
+                                        </section>
+
+                                        <section class="flex items-center space-x-4">
+                                            <button
+                                                class="py-3 px-4 flex-grow bg-[#232323] text-white font-bold rounded-full">Add
+                                                To Cart</button>
+                                            <button class="rounded-full border p-2 bg-[#FFD778]">
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7.97998 4.5061C4.79126 4.5061 2.19873 7.1291 2.19873 10.2881C2.19873 11.3903 2.69857 12.345 3.16227 13.0346C3.62598 13.7242 4.10173 14.1669 4.10173 14.1669L12.4364 22.5268L12.9904 23.0809L13.5444 22.5268L21.8791 14.1669C21.8791 14.1669 23.7821 12.4895 23.7821 10.2881C23.7821 7.1291 21.1895 4.5061 18.0008 4.5061C15.3541 4.5061 13.6498 6.09917 12.9904 6.77073C12.331 6.09917 10.6267 4.5061 7.97998 4.5061ZM7.97998 6.04798C10.2834 6.04798 12.4123 8.28852 12.4123 8.28852L12.9904 8.93899L13.5685 8.28852C13.5685 8.28852 15.6973 6.04798 18.0008 6.04798C20.3464 6.04798 22.2404 7.97231 22.2404 10.2881C22.2404 11.4777 20.7951 13.0828 20.7951 13.0828L12.9904 20.8885L5.18571 13.0828C5.18571 13.0828 4.81234 12.7244 4.43896 12.1673C4.06559 11.6102 3.7404 10.8844 3.7404 10.2881C3.7404 7.97231 5.63436 6.04798 7.97998 6.04798Z"
+                                                        fill="black" />
+                                                </svg>
+
+                                            </button>
+                                            <button class="p-2">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M15.4729 12.4445C14.3067 12.4445 13.2626 12.9765 12.5699 13.8104L8.0637 11.2519C8.20383 10.8576 8.28085 10.4336 8.28085 9.99172C8.28085 9.54994 8.20383 9.12593 8.0637 8.7316L12.5695 6.17253C13.2622 7.00672 14.3064 7.5389 15.4727 7.5389C17.553 7.5389 19.2455 5.8458 19.2455 3.76461C19.2457 1.68403 17.5532 -0.00854492 15.4729 -0.00854492C13.3923 -0.00854492 11.6996 1.68403 11.6996 3.76452C11.6996 4.20639 11.7766 4.63048 11.9168 5.0249L7.41067 7.58405C6.71802 6.75031 5.67408 6.21848 4.50814 6.21848C2.4273 6.21848 0.734375 7.91106 0.734375 9.99163C0.734375 12.0721 2.4273 13.7647 4.50814 13.7647C5.67408 13.7647 6.71793 13.2329 7.41058 12.3992L11.9168 14.9577C11.7766 15.3522 11.6995 15.7763 11.6995 16.2183C11.6995 18.2988 13.3922 19.9914 15.4728 19.9914C17.5531 19.9914 19.2456 18.2987 19.2456 16.2183C19.2457 14.1375 17.5532 12.4445 15.4729 12.4445ZM15.4729 1.31178C16.8251 1.31178 17.9253 2.41206 17.9253 3.76452C17.9253 5.11768 16.8251 6.21848 15.4729 6.21848C14.1203 6.21848 13.02 5.11768 13.02 3.76452C13.02 2.41206 14.1203 1.31178 15.4729 1.31178ZM4.50823 12.4445C3.15542 12.4445 2.05479 11.3441 2.05479 9.99172C2.05479 8.63917 3.15542 7.5389 4.50823 7.5389C5.86051 7.5389 6.96061 8.63917 6.96061 9.99172C6.96061 11.3441 5.86042 12.4445 4.50823 12.4445ZM15.4729 18.6711C14.1203 18.6711 13.02 17.5708 13.02 16.2184C13.02 14.8655 14.1203 13.7648 15.4729 13.7648C16.8251 13.7648 17.9253 14.8655 17.9253 16.2184C17.9253 17.5708 16.8251 18.6711 15.4729 18.6711Z"
+                                                        fill="#232323" />
+                                                </svg>
+
+                                            </button>
+                                        </section>
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="agree" x-model="agree"
+                                                class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                            <label for="agree" class="ml-2 text-sm text-gray-700">I agree with <span
+                                                    class="underline">Terms & Conditions</span></label>
+                                        </div>
+
+                                        <button
+                                            class="py-3 w-full font-bold rounded-lg bg-[#56175F] text-white">Buy</button>
+
+                                        <div class="flex items-end justify-center py-2">
+                                            <button class="underline">More payment options</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_0_23458)">
+                                                <path
+                                                    d="M19.6181 9.28012C18.6284 7.66146 17.2976 6.36086 15.626 5.37838C13.9543 4.39586 12.1891 3.90454 10.3301 3.90454C8.47106 3.90454 6.70574 4.39567 5.03404 5.37838C3.3623 6.36086 2.03163 7.66146 1.04205 9.28012C0.900749 9.52749 0.830078 9.77137 0.830078 10.0118C0.830078 10.2521 0.900749 10.496 1.04205 10.7433C2.03163 12.362 3.3623 13.6628 5.03404 14.645C6.70574 15.6276 8.47106 16.1186 10.3301 16.1186C12.1891 16.1186 13.9544 15.6293 15.626 14.6504C17.2976 13.6714 18.6286 12.369 19.6181 10.7433C19.7594 10.496 19.8301 10.2522 19.8301 10.0118C19.8301 9.77137 19.7594 9.52749 19.6181 9.28012ZM8.05565 6.38025C8.68824 5.74766 9.4463 5.43126 10.33 5.43126C10.4713 5.43126 10.5915 5.48087 10.6905 5.57977C10.7894 5.6787 10.8391 5.79891 10.8391 5.94025C10.8391 6.08171 10.7894 6.20184 10.6907 6.30063C10.5919 6.39967 10.4716 6.44913 10.3302 6.44913C9.72238 6.44913 9.20269 6.66482 8.77157 7.0959C8.3403 7.52724 8.1248 8.04671 8.1248 8.65456C8.1248 8.79609 8.07519 8.91615 7.97629 9.01516C7.87725 9.11424 7.75715 9.16366 7.61581 9.16366C7.47436 9.16366 7.35422 9.11412 7.25521 9.01516C7.15617 8.91615 7.1067 8.79594 7.1067 8.65456C7.1067 7.77108 7.42311 7.01287 8.05565 6.38025ZM14.937 13.4737C13.5197 14.3323 11.9841 14.7618 10.3301 14.7618C8.67606 14.7618 7.14046 14.3325 5.72326 13.4737C4.30605 12.6148 3.12738 11.4609 2.18731 10.0118C3.2617 8.34354 4.60823 7.09587 6.2269 6.26902C5.79575 7.00403 5.5801 7.79931 5.5801 8.65452C5.5801 9.96232 6.04493 11.0806 6.97435 12.0103C7.90377 12.9399 9.02246 13.4045 10.3301 13.4045C11.6378 13.4045 12.7562 12.9396 13.6858 12.0103C14.6154 11.0809 15.0801 9.96232 15.0801 8.65452C15.0801 7.79931 14.8644 7.00392 14.4332 6.26902C16.0518 7.09587 17.3984 8.34365 18.4728 10.0118C17.5329 11.4609 16.3543 12.6148 14.937 13.4737Z"
+                                                    fill="#232323" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_0_23458">
+                                                    <rect width="19" height="19" fill="white"
+                                                        transform="translate(0.830078 0.511475)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                        <span class="hover:underline text-sm">
+                                            193 customers are viewing this product
+                                        </span>
+                                    </div>
+                                    <div class="space-x-2">
+                                        <div class="flex items-center space-x-2">
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.3301 9.7417C11.4951 9.7417 11.6301 9.6067 11.6301 9.4417V8.8417C11.6301 8.6767 11.4951 8.5417 11.3301 8.5417H2.33008C2.16508 8.5417 2.03008 8.6767 2.03008 8.8417V9.4417C2.03008 9.6067 2.16508 9.7417 2.33008 9.7417H11.3301ZM24.5301 16.9417H23.6301V12.8879C23.6301 12.2579 23.3751 11.6392 22.9251 11.1929L19.7788 8.0467C19.3363 7.5967 18.7176 7.3417 18.0838 7.3417H16.4301V5.4892C16.4301 4.52545 15.5976 3.7417 14.5776 3.7417H5.08258C4.06258 3.7417 3.23008 4.52545 3.23008 5.4892V6.1417H1.13008C0.965078 6.1417 0.830078 6.2767 0.830078 6.4417V7.0417C0.830078 7.2067 0.965078 7.3417 1.13008 7.3417H10.1301C10.2951 7.3417 10.4301 7.2067 10.4301 7.0417V6.4417C10.4301 6.2767 10.2951 6.1417 10.1301 6.1417H4.43008V5.4892C4.43008 5.18545 4.72258 4.9417 5.08258 4.9417H14.5776C14.9376 4.9417 15.2301 5.18545 15.2301 5.4892V16.9417H8.61508C8.06758 16.2179 7.20508 15.7417 6.23008 15.7417C5.55133 15.7417 4.93258 15.9742 4.43008 16.3567V13.3417H3.23008V18.7417C3.23008 20.3992 4.57258 21.7417 6.23008 21.7417C7.88758 21.7417 9.23008 20.3992 9.23008 18.7417C9.23008 18.5354 9.20758 18.3367 9.17008 18.1417H16.4901C16.4488 18.3367 16.4301 18.5354 16.4301 18.7417C16.4301 20.3992 17.7726 21.7417 19.4301 21.7417C21.0876 21.7417 22.4301 20.3992 22.4301 18.7417C22.4301 18.5354 22.4076 18.3367 22.3701 18.1417H24.5301C24.6951 18.1417 24.8301 18.0067 24.8301 17.8417V17.2417C24.8301 17.0767 24.6951 16.9417 24.5301 16.9417ZM6.23008 20.5417C5.23633 20.5417 4.43008 19.7354 4.43008 18.7417C4.43008 17.7479 5.23633 16.9417 6.23008 16.9417C7.22383 16.9417 8.03008 17.7479 8.03008 18.7417C8.03008 19.7354 7.22383 20.5417 6.23008 20.5417ZM16.4301 8.5417H18.0838C18.3988 8.5417 18.7101 8.6692 18.9313 8.8942L22.0776 12.0405C22.1076 12.0704 22.1188 12.1117 22.1451 12.1454H16.4301V8.5417ZM19.4301 20.5417C18.4363 20.5417 17.6301 19.7354 17.6301 18.7417C17.6301 17.7479 18.4363 16.9417 19.4301 16.9417C20.4238 16.9417 21.2301 17.7479 21.2301 18.7417C21.2301 19.7354 20.4238 20.5417 19.4301 20.5417ZM22.4301 16.9417H21.8151C21.2676 16.2179 20.4051 15.7417 19.4301 15.7417C18.4551 15.7417 17.5926 16.2179 17.0451 16.9417H16.4301V13.3417H22.4301V16.9417ZM10.4301 11.8417V11.2417C10.4301 11.0767 10.2951 10.9417 10.1301 10.9417H1.13008C0.965078 10.9417 0.830078 11.0767 0.830078 11.2417V11.8417C0.830078 12.0067 0.965078 12.1417 1.13008 12.1417H10.1301C10.2951 12.1417 10.4301 12.0067 10.4301 11.8417Z"
+                                                    fill="#232323" stroke="#232323" stroke-width="0.0375" />
+                                            </svg>
+
+                                            <p class="font-bold text-sm">Cash On Delivery</p>
+
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.83008 0.0117188C13.2301 0.0117188 16.8301 3.61172 16.8301 8.01172C16.8301 12.4117 13.2301 16.0117 8.83008 16.0117C4.43008 16.0117 0.830078 12.4117 0.830078 8.01172C0.830078 3.61172 4.43008 0.0117188 8.83008 0.0117188ZM8.83008 11.2117C8.16341 11.2117 7.63008 11.745 7.63008 12.2784C7.63008 12.8117 8.16341 13.345 8.83008 13.345C9.49675 13.345 10.0301 12.8117 10.0301 12.2784C10.0301 11.7451 9.49675 11.2117 8.83008 11.2117ZM9.09675 2.94505C6.96341 2.94505 5.63008 4.14505 5.63008 5.87839H7.63008C7.63008 5.07839 8.16341 4.54505 9.09675 4.54505C9.89675 4.54505 10.4301 5.07839 10.4301 5.74505C10.2968 6.41172 10.1634 6.67839 9.36341 7.21172L9.09675 7.34505C8.16341 7.87839 7.76341 8.54505 7.76341 9.74505V10.145H9.63008V9.74505C9.63008 9.07839 9.89675 8.67839 10.8301 8.14505C11.8967 7.61172 12.2968 6.81172 12.2968 5.74505C12.5634 4.01172 11.2301 2.94505 9.09675 2.94505Z"
+                                                    fill="#C2C8CE" />
+                                            </svg>
+                                        </div>
+                                        <div class="my-2 ps-6 text-sm">
+                                            <p class="text-[#999999]">
+                                                Delivery for all over Bangladesh
+                                            </p>
+                                            <p class="text-[#999999] text-wrap">
+                                                Estimated to be delivered on 12/01/2025 - 15/01/2025.
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="space-x-2">
+                                        <div class="flex items-center space-x-2">
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22.6973 4.06509L13.6973 0.315091C13.4231 0.201362 13.1292 0.142822 12.8324 0.142822C12.5356 0.142822 12.2417 0.201362 11.9676 0.315091L2.96758 4.06509C2.12852 4.41197 1.58008 5.23228 1.58008 6.14165C1.58008 15.4463 6.94727 21.8776 11.9629 23.9682C12.516 24.1979 13.1395 24.1979 13.6926 23.9682C17.7098 22.2948 24.0801 16.5151 24.0801 6.14165C24.0801 5.23228 23.5316 4.41197 22.6973 4.06509ZM13.1207 22.5854C12.9332 22.6604 12.727 22.6604 12.5441 22.5854C7.95508 20.7667 3.08008 14.3917 3.08008 6.14165C3.08008 5.83697 3.26289 5.56509 3.53945 5.4479L12.5395 1.6979C12.7223 1.6229 12.9332 1.6229 13.116 1.6979L22.116 5.4479C22.3973 5.56509 22.5801 5.83697 22.5754 6.14165C22.5801 14.3917 17.7051 20.7667 13.1207 22.5854ZM12.8301 19.4073V4.82915L6.14102 7.61822C6.61445 13.2479 9.75508 17.6963 12.8301 19.4073ZM11.3301 16.276C9.62383 14.4057 8.2457 11.6917 7.76289 8.56509L11.3301 7.07915V16.276Z"
+                                                    fill="#232323" stroke="#232323" stroke-width="0.046875" />
+                                            </svg>
+
+
+                                            <p class="font-bold text-sm">Free Returns</p>
+
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.83008 0.0117188C13.2301 0.0117188 16.8301 3.61172 16.8301 8.01172C16.8301 12.4117 13.2301 16.0117 8.83008 16.0117C4.43008 16.0117 0.830078 12.4117 0.830078 8.01172C0.830078 3.61172 4.43008 0.0117188 8.83008 0.0117188ZM8.83008 11.2117C8.16341 11.2117 7.63008 11.745 7.63008 12.2784C7.63008 12.8117 8.16341 13.345 8.83008 13.345C9.49675 13.345 10.0301 12.8117 10.0301 12.2784C10.0301 11.7451 9.49675 11.2117 8.83008 11.2117ZM9.09675 2.94505C6.96341 2.94505 5.63008 4.14505 5.63008 5.87839H7.63008C7.63008 5.07839 8.16341 4.54505 9.09675 4.54505C9.89675 4.54505 10.4301 5.07839 10.4301 5.74505C10.2968 6.41172 10.1634 6.67839 9.36341 7.21172L9.09675 7.34505C8.16341 7.87839 7.76341 8.54505 7.76341 9.74505V10.145H9.63008V9.74505C9.63008 9.07839 9.89675 8.67839 10.8301 8.14505C11.8967 7.61172 12.2968 6.81172 12.2968 5.74505C12.5634 4.01172 11.2301 2.94505 9.09675 2.94505Z"
+                                                    fill="#C2C8CE" />
+                                            </svg>
+                                        </div>
+                                        <div class="my-2 ps-6 text-sm">
+                                            <p class="text-[#999999] text-wrap">
+                                                Learn More.
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="space-x-2">
+                                        <div class="flex items-center space-x-2">
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0885 8.14152H13.5677C13.7093 8.14152 13.8218 8.25819 13.8177 8.39985L13.5052 16.5665C13.501 16.6999 13.3885 16.8082 13.2552 16.8082H12.401C12.2677 16.8082 12.1552 16.704 12.151 16.5665L11.8385 8.39985C11.8343 8.25819 11.9468 8.14152 12.0885 8.14152ZM12.8302 17.6415C12.1843 17.6415 11.6635 18.1624 11.6635 18.8082C11.6635 19.454 12.1843 19.9749 12.8302 19.9749C13.476 19.9749 13.9968 19.454 13.9968 18.8082C13.9968 18.1624 13.476 17.6415 12.8302 17.6415ZM24.5593 19.8082L14.5635 2.47485C13.7968 1.14152 11.8677 1.14152 11.0968 2.47485L1.10101 19.8082C0.334345 21.1374 1.29268 22.8082 2.83434 22.8082H22.8302C24.3635 22.8082 25.3302 21.1415 24.5593 19.8082ZM22.8302 21.4749H2.83018C2.31768 21.4749 1.99684 20.9207 2.25101 20.4749L12.251 3.14152C12.5052 2.69985 13.151 2.69569 13.4052 3.14152L23.4052 20.4749C23.6635 20.9165 23.3427 21.4749 22.8302 21.4749Z"
+                                                    fill="#232323" stroke="#232323" stroke-width="0.0416667" />
+                                            </svg>
+                                            <p class="font-bold text-sm">Privacy Policy</p>
+
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.83008 0.0117188C13.2301 0.0117188 16.8301 3.61172 16.8301 8.01172C16.8301 12.4117 13.2301 16.0117 8.83008 16.0117C4.43008 16.0117 0.830078 12.4117 0.830078 8.01172C0.830078 3.61172 4.43008 0.0117188 8.83008 0.0117188ZM8.83008 11.2117C8.16341 11.2117 7.63008 11.745 7.63008 12.2784C7.63008 12.8117 8.16341 13.345 8.83008 13.345C9.49675 13.345 10.0301 12.8117 10.0301 12.2784C10.0301 11.7451 9.49675 11.2117 8.83008 11.2117ZM9.09675 2.94505C6.96341 2.94505 5.63008 4.14505 5.63008 5.87839H7.63008C7.63008 5.07839 8.16341 4.54505 9.09675 4.54505C9.89675 4.54505 10.4301 5.07839 10.4301 5.74505C10.2968 6.41172 10.1634 6.67839 9.36341 7.21172L9.09675 7.34505C8.16341 7.87839 7.76341 8.54505 7.76341 9.74505V10.145H9.63008V9.74505C9.63008 9.07839 9.89675 8.67839 10.8301 8.14505C11.8967 7.61172 12.2968 6.81172 12.2968 5.74505C12.5634 4.01172 11.2301 2.94505 9.09675 2.94505Z"
+                                                    fill="#C2C8CE" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div x-show="activeTab === 'tab2'" class="p-4 bg-gray-50 border border-gray-200 rounded">
+                            Wait for it
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <div class="space-x-4 flex items-center justify-center">
+                    <div x-data="{ activeTab: 'tab1' }" class="w-full">
+                        <!-- Tabs -->
+                        <div class="border-b border-gray-200">
+                            <nav class="flex items-center justify-center space-x-6 overflow-x-auto" aria-label="Tabs">
+                                <button @click="activeTab = 'tab1'"
+                                    :class="activeTab === 'tab1' ? 'text-blue-600 border-blue-600' : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                    Description
+                                </button>
+                                <button @click="activeTab = 'tab2'"
+                                    :class="activeTab === 'tab2' ? 'text-blue-600 border-blue-600' : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                    Additional Information
+                                </button>
+                                <button @click="activeTab = 'tab3'"
+                                    :class="activeTab === 'tab3' ? 'text-blue-600 border-blue-600' : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                    Shipping & Return
+                                </button>
+                                <button @click="activeTab = 'tab3'"
+                                    :class="activeTab === 'tab3' ? 'text-blue-600 border-blue-600' : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+                                    class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                    Ratings & Reviews
+                                </button>
+                            </nav>
+                        </div>
+
+                        <!-- Tab Content -->
+                        <div class="mt-4">
+                            <!-- Tab 1 Content -->
+                            <div x-show="activeTab === 'tab1'" class="p-4 bg-gray-50 border border-gray-200 rounded">
+                                <h2 class="font-medium text-gray-900">Product Description</h2>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>
+                                        Main Material: Cotton (সুতি কাপড়) With Ari Work..
+                                    </li>
+                                    <li>
+                                        Comfortable to wear.
+                                    </li>
+                                    <li>
+                                        Advantage: Very Comfortable for hot weather & all season too
+                                    </li>
+                                    <li>
+                                        Picture Type: This Picture is Real Pic of This Product
+                                    </li>
+                                    <li>
+                                        #dress for girls
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Tab 2 Content -->
+                            <div x-show="activeTab === 'tab2'" class="p-4 bg-gray-50 border border-gray-200 rounded">
+                                <h2 class="font-medium text-gray-900">Tab 2 Content</h2>
+                                <p class="text-sm text-gray-600">This is the specific content for Tab 2.</p>
+                            </div>
+                            <!-- Tab 3 Content -->
+                            <div x-show="activeTab === 'tab2'" class="p-4 bg-gray-50 border border-gray-200 rounded">
+                                <h2 class="font-medium text-gray-900">Tab 2 Content</h2>
+                                <p class="text-sm text-gray-600">This is the specific content for Tab 2.</p>
+                            </div>
+                            <div x-show="activeTab === 'tab2'" class="p-4 bg-gray-50 border border-gray-200 rounded">
+                                <h2 class="font-medium text-gray-900">Tab 2 Content</h2>
+                                <p class="text-sm text-gray-600">This is the specific content for Tab 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="my-10">
+                <h1 class="font-bold text-lg py-6">Related Products</h1>
+                <div class="grid grid-cols-1 md:grid-col-2 lg:grid-cols-4 gap-6">
+                    <div x-data="{cardHover: false}" class="relative border p-3 rounded-md flex flex-col gap-2">
+                        <div class="absolute -top-1 left-2/4 -translate-x-2/4"
+                            style="background: url(public/img/topOfCardCarveDesign.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
+                            <span class="text-white text-xs font-bold p-4">03% OFF</span>
+                        </div>
+                        <div class="absolute hidden lg:block bg-[#71397C] rounded-l-lg top-5 right-0">
+                            <span class="text-white text-xs font-bold lg:p-4 pl-4"
+                                style="text-shadow: 0px 0px 5px white;">03% OFF</span>
+                        </div>
+                        <button x-show="cardHover" @mouseover="cardHover = true"
+                            class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick
+                            View</button>
+                        <span
+                            class="absolute hidden lg:inline-block px-3.5 py-1 rounded-md text-sm text-white bg-[#BC37C6]">Sale</span>
+                        <a @mouseover="cardHover = true" @mouseout="cardHover = false" href=""
+                            class="h-28 lg:h-[303px] w-full">
+                            <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
+                        </a>
+                        <div class="w-full flex flex-col items-start gap-2">
+                            <button
+                                class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In
+                                Stock</button>
+                            <h2 class="line-clamp-2 font-light md:font-medium">That Art, High Fashion & Accessories</h2>
+                            <div class="w-full flex items-center gap-3">
+                                <span class="text-[#505050] font-normal">$<del
+                                        class="font-bold lg:font-normal">99</del></span>
+                                <span class="text-[#E10600]">$<span class="font-bold">455</span></span>
+                                <span
+                                    class="text-[10px] font-bold text-[#00BEFF] border border-[#00BEFF] px-0.5 rounded-md">New</span>
+                            </div>
+                            <div class="w-full">
+                                <form action="" class="flex text-lg gap-3">
+                                    <div class="flex items-center space-x-4">
+                                        <label class="flex flex-col items-center">
+                                            <input type="radio" name="color" value="black" class="hidden peer" />
+                                            <span
+                                                class="w-6 h-6 rounded-full bg-black border-2 border-white ring-2 ring-gray-300 peer-checked:ring-black peer-checked:ring-4"></span>
+                                        </label>
+                                        <label class="flex flex-col items-center">
+                                            <input type="radio" name="color" value="white" class="hidden peer" />
+                                            <span
+                                                class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-500 peer-checked:ring-4"></span>
+                                        </label>
+                                        <label class="flex flex-col items-center">
+                                            <input type="radio" name="color" value="blue" class="hidden peer" />
+                                            <span
+                                                class="w-6 h-6 rounded-full bg-gray-600 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-700 peer-checked:ring-4"></span>
+                                        </label>
+                                        <label class="flex flex-col items-center">
+                                            <input type="radio" name="color" value="orange" class="hidden peer" />
+                                            <span
+                                                class="w-6 h-6 rounded-full bg-orange-400 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-orange-500 peer-checked:ring-4"></span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="w-full flex items-center justify-between gap-2.5">
+                                <button
+                                    class="border border-black py-1 px-4 rounded-3xl flex-grow whitespace-nowrap">Quick
+                                    Add</button>
+                                <button class="bg-[#e9e6e6] rounded-full p-2">
+                                    <img src="public/img/heard.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="my-10">
+                <h1 class="text-center font-bold text-lg py-6">Recently Viewed Products</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div x-data="{cardHover: false}" class="relative border p-3 rounded-md flex flex-col gap-2">
+                        <div class="absolute -top-1 left-2/4 -translate-x-2/4"
+                            style="background: url(public/img/topOfCardCarveDesign.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
+                            <span class="text-white text-xs font-bold p-4">03% OFF</span>
+                        </div>
+                        <div class="absolute hidden lg:block bg-[#71397C] rounded-l-lg top-5 right-0">
+                            <span class="text-white text-xs font-bold lg:p-4 pl-4"
+                                style="text-shadow: 0px 0px 5px white;">03% OFF</span>
+                        </div>
+                        <button x-show="cardHover" @mouseover="cardHover = true"
+                            class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick
+                            View</button>
+                        <span
+                            class="absolute hidden lg:inline-block px-3.5 py-1 rounded-md text-sm text-white bg-[#BC37C6]">Sale</span>
+                        <a @mouseover="cardHover = true" @mouseout="cardHover = false" href=""
+                            class="h-28 lg:h-[303px] w-full">
+                            <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
+                        </a>
+                        <div class="w-full flex flex-col items-start gap-2">
+                            <button
+                                class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In
+                                Stock</button>
+                            <h2 class="line-clamp-2 font-light md:font-medium">That Art, High Fashion & Accessories</h2>
+                            <div class="w-full flex items-center gap-3">
+                                <span class="text-[#505050] font-normal">$<del
+                                        class="font-bold lg:font-normal">99</del></span>
+                                <span class="text-[#E10600]">$<span class="font-bold">455</span></span>
+                                <span
+                                    class="text-[10px] font-bold text-[#00BEFF] border border-[#00BEFF] px-0.5 rounded-md">New</span>
+                            </div>
+                            <div class="w-full">
+                                <form action="" class="flex text-lg gap-3">
+                                    <div class="flex items-center space-x-4">
+                                        <label class="flex flex-col items-center">
+                                            <input type="radio" name="color" value="black" class="hidden peer" />
+                                            <span
+                                                class="w-6 h-6 rounded-full bg-black border-2 border-white ring-2 ring-gray-300 peer-checked:ring-black peer-checked:ring-4"></span>
+                                        </label>
+                                        <label class="flex flex-col items-center">
+                                            <input type="radio" name="color" value="white" class="hidden peer" />
+                                            <span
+                                                class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-500 peer-checked:ring-4"></span>
+                                        </label>
+                                        <label class="flex flex-col items-center">
+                                            <input type="radio" name="color" value="blue" class="hidden peer" />
+                                            <span
+                                                class="w-6 h-6 rounded-full bg-gray-600 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-700 peer-checked:ring-4"></span>
+                                        </label>
+                                        <label class="flex flex-col items-center">
+                                            <input type="radio" name="color" value="orange" class="hidden peer" />
+                                            <span
+                                                class="w-6 h-6 rounded-full bg-orange-400 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-orange-500 peer-checked:ring-4"></span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="w-full flex items-center justify-between gap-2.5">
+                                <button
+                                    class="border border-black py-1 px-4 rounded-3xl flex-grow whitespace-nowrap">Quick
+                                    Add</button>
+                                <button class="bg-[#e9e6e6] rounded-full p-2">
+                                    <img src="public/img/heard.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col md:flex-row items-center gap-6 px-10 space-y-4 md:space-y-0">
+
+                <div class="mx-auto flex flex-col items-center justify-center space-y-2">
+                    <svg width="53" height="40" viewBox="0 0 53 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="53" height="40" fill="url(#pattern0_30_3139)" />
+                        <defs>
+                            <pattern id="pattern0_30_3139" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_30_3139" transform="scale(0.0188679 0.025)" />
+                            </pattern>
+                            <image id="image0_30_3139" width="53" height="40"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+
+                    <h1 class="font-bold text-lg">Cash On Delivery</h1>
+                    <p class="text-center text-wrap text-sm">
+                        Metus tellus multricies a quam sit
+                        amet lorem diam libero de
+                        cosmopolis.
+                    </p>
+
+                </div>
+                <div class="mx-auto flex flex-col items-center justify-center space-y-2">
+                    <svg width="38" height="40" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="38" height="40" fill="url(#pattern0_30_4911)" />
+                        <defs>
+                            <pattern id="pattern0_30_4911" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_30_4911" transform="scale(0.0263158 0.025)" />
+                            </pattern>
+                            <image id="image0_30_4911" width="38" height="40"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+
+
+                    <h1 class="font-bold text-lg">Secure Shopping</h1>
+                    <p class="text-center text-wrap text-sm">
+                        Metus tellus multricies a quam sit
+                        amet lorem diam libero de
+                        cosmopolis.
+                    </p>
+
+                </div>
+                <div class="mx-auto flex flex-col items-center justify-center space-y-2">
+                    <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="42" height="40" fill="url(#pattern0_30_179)" />
+                        <defs>
+                            <pattern id="pattern0_30_179" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_30_179" transform="scale(0.0238095 0.025)" />
+                            </pattern>
+                            <image id="image0_30_179" width="42" height="40"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+
+
+
+                    <h1 class="font-bold text-lg">Shop With Confidence</h1>
+                    <p class="text-center text-wrap text-sm">
+                        Metus tellus multricies a quam sit
+                        amet lorem diam libero de
+                        cosmopolis.
+                    </p>
+
+                </div>
+
+                <div class="flex flex-col items-center justify-center space-y-2">
+                    <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="42" height="40" fill="url(#pattern0_30_4550)" />
+                        <defs>
+                            <pattern id="pattern0_30_4550" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_30_4550" transform="scale(0.0238095 0.025)" />
+                            </pattern>
+                            <image id="image0_30_4550" width="42" height="40"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+
+                    <h1 class="font-bold text-lg">24/7 Help Center</h1>
+                    <p class="text-center text-wrap text-sm">
+                        Metus tellus multricies a quam sit
+                        amet lorem diam libero de
+                        cosmopolis.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+        <!-- footer -->
+        <footer class="w-full bg-[#282828] text-white py-11">
+            <div class="w-[95%] m-auto grid-cols-1 grid lg:grid-cols-5 gap-y-4 text-sm">
+                <div x-data="{shop: false}" class="col-span-1 flex flex-col gap-y-3 pb-2 border-b lg:border-none">
+                    <div class="w-full flex items-center justify-between">
+                        <span class="font-bold w-full">Shop</span>
+                        <button @click="shop = !shop" class="lg:hidden">
+                            <img :src="shop ? 'public/img/minus.svg' : 'public/img/plus.svg'" alt="">
+                        </button>
+                    </div>
+                    <div :class="shop ?'flex' : 'hidden lg:flex'" class="flex-col gap-y-3">
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                    </div>
+                </div>
+                <div x-data="{shop: false}" class="col-span-1 flex flex-col gap-y-3 pb-2 border-b lg:border-none">
+                    <div class="w-full flex items-center justify-between">
+                        <span class="font-bold w-full">Top Brands</span>
+                        <button @click="shop = !shop" class="lg:hidden">
+                            <img :src="shop ? 'public/img/minus.svg' : 'public/img/plus.svg'" alt="">
+                        </button>
+                    </div>
+                    <div :class="shop ?'flex' : 'hidden lg:flex'" class="flex-col gap-y-3">
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                    </div>
+                </div>
+                <div x-data="{shop: false}" class="col-span-1 flex flex-col gap-y-3 pb-2 border-b lg:border-none">
+                    <div class="w-full flex items-center justify-between">
+                        <span class="font-bold w-full">Shop</span>
+                        <button @click="shop = !shop" class="lg:hidden">
+                            <img :src="shop ? 'public/img/minus.svg' : 'public/img/plus.svg'" alt="">
+                        </button>
+                    </div>
+                    <div :class="shop ?'flex' : 'hidden lg:flex'" class="flex-col gap-y-3">
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                    </div>
+                </div>
+                <div x-data="{shop: false}" class="col-span-1 flex flex-col gap-y-3 pb-2 border-b lg:border-none">
+                    <div class="w-full flex items-center justify-between">
+                        <span class="font-bold w-full">Shop</span>
+                        <button @click="shop = !shop" class="lg:hidden">
+                            <img :src="shop ? 'public/img/minus.svg' : 'public/img/plus.svg'" alt="">
+                        </button>
+                    </div>
+                    <div :class="shop ?'flex' : 'hidden lg:flex'" class="flex-col gap-y-3">
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                        <span class="font-normal">Mithai Sharee</span>
+                    </div>
+                </div>
+                <div class="col-span-1 flex flex-col gap-y-4 pb-2">
+                    <div class="flex items-start gap-x-5">
+                        <img src="public/img/location.svg" alt="" class="mt-1">
+                        <span>Gawsia Market,<br> Bhulta Narayangonj</span>
+                    </div>
+                    <div class="flex items-start gap-x-4">
+                        <img src="public/img/envalop.svg" alt="" class="mt-1">
+                        <span>Call us at <span class="font-bold">+8801841222236</span></span>
+                    </div>
+                    <div class="flex items-start gap-x-4">
+                        <img src="public/img/inbox.svg" alt="" class="mt-1">
+                        <span>Call us at <span class="font-bold">+8801841222236</span></span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <a href="#">
+                            <img src="public/img/facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="public/img/instagram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="public/img/pintarest.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="public/img/snapchat.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="public/img/x.svg" alt="">
+                        </a>
+                    </div>
+                    <a href="index.html">
+                        <img src="public/img/GawsiaBazarlogo.png" alt="">
+                    </a>
+                    <div class="flex gap-3">
+                        <a href="">
+                            <img src="public/img/playStore.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="public/img/appStore.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- Script for client review -->
+
+
+
+        <script>
+            function slider() {
+                return {
+                    currentIndex: 0,
+                    slides: [
+                        {
+                            title: "JAKARIA TALUKDAR",
+                            description:
+                                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quisquam expedita voluptatem?",
+                            image: "https://d2gwgwt9a7yxle.cloudfront.net/what_is_user_id_in_net_banking_mobile_871b681e52.jpg",
+                        },
+                        {
+                            title: "SLIDE 2",
+                            description: "Another slide content goes here. Replace this text with meaningful content.",
+                            image: "https://via.placeholder.com/150",
+                        },
+                        {
+                            title: "SLIDE 3",
+                            description: "Another slide content goes here. Replace this text with meaningful content.",
+                            image: "https://via.placeholder.com/150",
+                        },
+                    ],
+                    interval: null,
+                    startAutoSlide() {
+                        this.interval = setInterval(() => {
+                            this.next();
+                        }, 1500);
+                    },
+                    pauseAutoSlide() {
+                        clearInterval(this.interval);
+                    },
+                    next() {
+                        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+                    },
+                    prev() {
+                        this.currentIndex =
+                            (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+                    },
+                };
+            }
+        </script>
+        <!-- Script for Customers slider -->
+        <script>
+            function flowingSlider() {
+                return {
+                    currentIndex: 0, // Tracks the current slide index
+                    slideWidth: 256, // Width of each slide (adjust based on the number of columns in your grid)
+                    slides: [
+                        { image: "public/img/logo.png" },
+                        { image: "public/img/logo.png" },
+                        { image: "public/img/logo.png" },
+                        { image: "public/img/logo.png" },
+                        { image: "public/img/logo.png" },
+                        { image: "public/img/logo.png" },
+                        // Add as many slides as needed
+                    ],
+                    startAutoSlide() {
+                        setInterval(() => {
+                            // Move to the next set of slides; if at the end, loop back to the first set
+                            if (this.currentIndex + 1 >= this.slides.length) {
+                                // Instant jump back to first slide (without animation) to avoid jumpy effect
+                                this.currentIndex = 0;
+                            } else {
+                                this.currentIndex++;
+                            }
+                        }, 2000); // Slide every 2 seconds
+                    },
+                };
+            }
+        </script>
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('slider', () => ({
+                    slides: [
+                        'public/img/slide1.webp', // First slide
+                        'public/img/slide2.webp',   // Additional slides
+                        'public/img/slide3.webp',
+                        'public/img/hero img.png',
+                    ],
+                    activeSlide: 0, // Start with the first slide
+                    interval: null, // For auto-sliding
+                    startPosition: null, // For drag functionality
+                    endPosition: null,
+
+                    // Automatically slide every 1500ms
+                    startAutoSlide() {
+                        this.interval = setInterval(() => {
+                            this.nextSlide();
+                        }, 2000);
+                    },
+
+                    // Go to the next slide
+                    nextSlide() {
+                        this.activeSlide = (this.activeSlide + 1) % this.slides.length;
+                    },
+
+                    // Go to the previous slide
+                    prevSlide() {
+                        this.activeSlide =
+                            this.activeSlide > 0 ? this.activeSlide - 1 : this.slides.length - 1;
+                    },
+
+                    // Navigate to a specific slide
+                    goToSlide(index) {
+                        this.activeSlide = index;
+                    },
+
+                    // Start dragging
+                    startDragging(event) {
+                        clearInterval(this.interval); // Pause auto-slide while dragging
+                        this.startPosition = event.clientX;
+                    },
+
+                    // Stop dragging
+                    stopDragging(event) {
+                        this.endPosition = event.clientX;
+                        const threshold = 50; // Minimum drag distance to trigger slide change
+
+                        if (this.startPosition && this.endPosition) {
+                            if (this.startPosition - this.endPosition > threshold) {
+                                this.nextSlide();
+                            } else if (this.endPosition - this.startPosition > threshold) {
+                                this.prevSlide();
+                            }
+                        }
+
+                        this.startPosition = null;
+                        this.endPosition = null;
+                        this.startAutoSlide(); // Resume auto-slide after interaction
+                    },
+
+                    // Drag functionality
+                    drag(event) {
+                        if (this.startPosition !== null) {
+                            event.preventDefault(); // Prevent text selection while dragging
+                        }
+                    },
+                }));
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </body>
+
+</html>
