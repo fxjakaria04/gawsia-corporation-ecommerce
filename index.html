@@ -203,18 +203,30 @@
       </main>
       <!-- card section -->
        <section class="w-full py-5">
+        <div class="w-[98%] m-auto grid grid-cols-1">
+          <div class="col-span-1 flex items-center justify-between my-4">
+            <div class="flex items-center gap-3">
+              <h4 class="font-bold text-[#232323]">Lungi Deals</h4>
+              <a href="#" class="text-sm text-[#3C3C3C] underline">View All</a>
+            </div>
+            <div class="bg-[#71397C] rounded-l-lg">
+              <span class="text-white text-xs font-bold lg:p-4 pl-4" style="text-shadow: 0px 0px 5px white;">Retail Sale</span>
+            </div>
+          </div>
+        </div>
         <div class="w-[98%] m-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          <div class="relative border p-3 rounded-md flex flex-col gap-2">
+          <div x-data="{cardHover: false}" class="relative border p-3 rounded-md flex flex-col gap-2">
             <div class="absolute -top-1 left-2/4 -translate-x-2/4" style="background: url(public/img/topOfCardCarveDesign.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
               <span class="text-white text-xs font-bold p-4">03% OFF</span>
             </div>
             <div class="absolute bg-[#71397C] rounded-l-lg top-5 right-0">
-              <span class="text-white text-xs font-bold lg:p-4 text-shadow pl-4" style="text-shadow: 0px 0px 5px white;">03% OFF</span>
+              <span class="text-white text-xs font-bold lg:p-4 pl-4" style="text-shadow: 0px 0px 5px white;">03% OFF</span>
             </div>
-            <button class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick View</button>
-            <div class="h-28 lg:h-[303px] w-full">
+            <button x-show="cardHover" @mouseover="cardHover = true" class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick View</button>
+            <span class="absolute px-3.5 py-1 rounded-md text-sm text-white bg-[#BC37C6]">Sale</span>
+            <a @mouseover="cardHover = true" @mouseout="cardHover = false" href="" class="h-28 lg:h-[303px] w-full">
               <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
-            </div>
+            </a>
             <div class="w-full flex flex-col items-start gap-2">
               <button class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In Stock</button>
               <h2 class="line-clamp-2 font-light md:font-medium">That Art, High Fashion & Accessories</h2>
@@ -231,7 +243,112 @@
                 </form>
               </div>
               <div class="w-full flex items-center justify-between gap-2.5">
-                <button class="border border-black py-2 px-4 rounded-3xl flex-grow">Quick Add</button>
+                <button class="border border-black py-1 px-4 rounded-3xl flex-grow">Quick Add</button>
+                <button class="bg-[#e9e6e6] rounded-full p-2">
+                  <img src="public/img/heard.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div x-data="{cardHover: false}" class="relative border p-3 rounded-md flex flex-col gap-2">
+            <div class="absolute -top-1 left-2/4 -translate-x-2/4" style="background: url(public/img/topOfCardCarveDesign.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
+              <span class="text-white text-xs font-bold p-4">03% OFF</span>
+            </div>
+            <div class="absolute bg-[#71397C] rounded-l-lg top-5 right-0">
+              <span class="text-white text-xs font-bold lg:p-4 text-shadow pl-4" style="text-shadow: 0px 0px 5px white;">03% OFF</span>
+            </div>
+            <button x-show="cardHover" @mouseover="cardHover = true" class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick View</button>
+            <span class="absolute px-3.5 py-1 rounded-md text-sm text-white bg-[#BC37C6]">Sale</span>
+            <a @mouseover="cardHover = true" @mouseout="cardHover = false" href="" class="h-28 lg:h-[303px] w-full">
+              <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
+            </a>
+            <div class="w-full flex flex-col items-start gap-2">
+              <button class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In Stock</button>
+              <h2 class="line-clamp-2 font-light md:font-medium">That Art, High Fashion & Accessories</h2>
+              <div class="w-full flex items-center gap-3">
+                <span class="text-[#505050] font-normal">$<del class="font-bold lg:font-normal">99</del></span>
+                <span class="text-[#E10600]">$<span class="font-bold">455</span></span>
+                <span class="text-[10px] font-bold text-[#00BEFF] border border-[#00BEFF] px-0.5 rounded-md">New</span>
+              </div>
+              <div class="w-full">
+                <form action="" class="flex text-lg gap-3">
+                  <button class="p-2 bg-[#BBB8CB] rounded-full border-white border-[4px] outline outline-1 outline-black"></button>
+                  <button class="p-2 bg-zinc-400 rounded-full border-white border-[4px] outline outline-1 outline-gray-500"></button>
+                  <button class="p-2 bg-red-600 rounded-full border-white border-[4px] outline outline-1 outline-gray-500"></button>
+                </form>
+              </div>
+              <div class="w-full flex items-center justify-between gap-2.5">
+                <button class="border border-black py-1 px-4 rounded-3xl flex-grow">Quick Add</button>
+                <button class="bg-[#e9e6e6] rounded-full p-2">
+                  <img src="public/img/heard.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div x-data="{cardHover: false}" class="relative border p-3 rounded-md flex flex-col gap-2">
+            <div class="absolute -top-1 left-2/4 -translate-x-2/4" style="background: url(public/img/topOfCardCarveDesign.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
+              <span class="text-white text-xs font-bold p-4">03% OFF</span>
+            </div>
+            <div class="absolute bg-[#71397C] rounded-l-lg top-5 right-0">
+              <span class="text-white text-xs font-bold lg:p-4 text-shadow pl-4" style="text-shadow: 0px 0px 5px white;">03% OFF</span>
+            </div>
+            <button x-show="cardHover" @mouseover="cardHover = true" class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick View</button>
+            <span class="absolute px-3.5 py-1 rounded-md text-sm text-white bg-[#BC37C6]">Sale</span>
+            <a @mouseover="cardHover = true" @mouseout="cardHover = false" href="" class="h-28 lg:h-[303px] w-full">
+              <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
+            </a>
+            <div class="w-full flex flex-col items-start gap-2">
+              <button class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In Stock</button>
+              <h2 class="line-clamp-2 font-light md:font-medium">That Art, High Fashion & Accessories</h2>
+              <div class="w-full flex items-center gap-3">
+                <span class="text-[#505050] font-normal">$<del class="font-bold lg:font-normal">99</del></span>
+                <span class="text-[#E10600]">$<span class="font-bold">455</span></span>
+                <span class="text-[10px] font-bold text-[#00BEFF] border border-[#00BEFF] px-0.5 rounded-md">New</span>
+              </div>
+              <div class="w-full">
+                <form action="" class="flex text-lg gap-3">
+                  <button class="p-2 bg-[#BBB8CB] rounded-full border-white border-[4px] outline outline-1 outline-black"></button>
+                  <button class="p-2 bg-zinc-400 rounded-full border-white border-[4px] outline outline-1 outline-gray-500"></button>
+                  <button class="p-2 bg-red-600 rounded-full border-white border-[4px] outline outline-1 outline-gray-500"></button>
+                </form>
+              </div>
+              <div class="w-full flex items-center justify-between gap-2.5">
+                <button class="border border-black py-1 px-4 rounded-3xl flex-grow">Quick Add</button>
+                <button class="bg-[#e9e6e6] rounded-full p-2">
+                  <img src="public/img/heard.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div x-data="{cardHover: false}" class="relative border p-3 rounded-md flex flex-col gap-2">
+            <div class="absolute -top-1 left-2/4 -translate-x-2/4" style="background: url(public/img/topOfCardCarveDesign.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
+              <span class="text-white text-xs font-bold p-4">03% OFF</span>
+            </div>
+            <div class="absolute bg-[#71397C] rounded-l-lg top-5 right-0">
+              <span class="text-white text-xs font-bold lg:p-4 text-shadow pl-4" style="text-shadow: 0px 0px 5px white;">03% OFF</span>
+            </div>
+            <button x-show="cardHover" @mouseover="cardHover = true" class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick View</button>
+            <span class="absolute px-3.5 py-1 rounded-md text-sm text-white bg-[#BC37C6]">Sale</span>
+            <a @mouseover="cardHover = true" @mouseout="cardHover = false" href="" class="h-28 lg:h-[303px] w-full">
+              <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
+            </a>
+            <div class="w-full flex flex-col items-start gap-2">
+              <button class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In Stock</button>
+              <h2 class="line-clamp-2 font-light md:font-medium">That Art, High Fashion & Accessories</h2>
+              <div class="w-full flex items-center gap-3">
+                <span class="text-[#505050] font-normal">$<del class="font-bold lg:font-normal">99</del></span>
+                <span class="text-[#E10600]">$<span class="font-bold">455</span></span>
+                <span class="text-[10px] font-bold text-[#00BEFF] border border-[#00BEFF] px-0.5 rounded-md">New</span>
+              </div>
+              <div class="w-full">
+                <form action="" class="flex text-lg gap-3">
+                  <button class="p-2 bg-[#BBB8CB] rounded-full border-white border-[4px] outline outline-1 outline-black"></button>
+                  <button class="p-2 bg-zinc-400 rounded-full border-white border-[4px] outline outline-1 outline-gray-500"></button>
+                  <button class="p-2 bg-red-600 rounded-full border-white border-[4px] outline outline-1 outline-gray-500"></button>
+                </form>
+              </div>
+              <div class="w-full flex items-center justify-between gap-2.5">
+                <button class="border border-black py-1 px-4 rounded-3xl flex-grow">Quick Add</button>
                 <button class="bg-[#e9e6e6] rounded-full p-2">
                   <img src="public/img/heard.svg" alt="">
                 </button>
