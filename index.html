@@ -153,8 +153,8 @@
           @mousemove="drag($event)"
         >
           <!-- Single Image Acting as Slide -->
-          <div class="relative">
-            <img :src="slides[activeSlide]" alt="Slide Image" class="w-full h-auto">
+          <div class="relative h-[462px] overflow-hidden">
+            <img :src="slides[activeSlide]" alt="Slide Image" class="w-full h-full object-cover">
           </div>
 
           <!-- Navigation Arrows -->
