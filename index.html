@@ -368,12 +368,11 @@
 
           <div class="w-full lg:w-5/6 flex-grow p-2 flex items-end justify-between">
             <div class="flex gap-x-3">
-              <div class="flex flex-col items-center gap-1">
-                <div class="h-16 w-12 rounded-tl-xl rounded-br-xl overflow-hidden border border-black">
-                  <img src="public/img/slide1.webp" alt="" class="h-full w-full object-cover">
-                </div>
-                <span class="text-xs font-medium">hello world</span>
-              </div>
+              
+              
+
+
+              
               <div class="h-16 w-12 rounded-tl-xl rounded-br-xl overflow-hidden border border-black">
                 <img src="public/img/slide1.webp" alt="" class="h-full w-full object-cover">
               </div>
@@ -411,16 +410,16 @@
                   <a @mouseover="cardHover = true" @mouseout="cardHover = false" href="" class="h-28 lg:h-[303px] w-full">
                     <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
                   </a>
-                  <div class="w-full flex flex-col items-start gap-2">
+                  <form action="" class="w-full flex flex-col items-start gap-2">
                     <button class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In Stock</button>
-                    <h2 class="line-clamp-2 font-light md:font-medium">That Art, High Fashion & Accessories</h2>
+                    <h2 class="line-clamp-2 font-light md:font-medium">Form success</h2>
                     <div class="w-full flex items-center gap-3">
                       <span class="text-[#505050] font-normal">$<del class="font-bold lg:font-normal">99</del></span>
                       <span class="text-[#E10600]">$<span class="font-bold">455</span></span>
                       <span class="text-[10px] font-bold text-[#00BEFF] border border-[#00BEFF] px-0.5 rounded-md">New</span>
                     </div>
                     <div class="w-full">
-                      <form action="" class="flex text-lg gap-3">
+                      <div class="flex text-lg gap-3">
                         <div class="flex items-center space-x-4">
                           <label class="flex flex-col items-center">
                             <input type="radio" name="color" value="black" class="hidden peer" />
@@ -447,7 +446,7 @@
                             ></span>
                           </label>
                         </div>
-                      </form>
+                      </div>
                     </div>
                     <div class="w-full flex items-center justify-between gap-2.5">
                       <button class="border border-black py-1 px-4 rounded-3xl flex-grow whitespace-nowrap">Quick Add</button>
@@ -455,7 +454,7 @@
                         <img src="public/img/heard.svg" alt="">
                       </button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </template>
@@ -607,12 +606,13 @@
             </button>
           </div>
           <div :class="shop ?'flex' : 'hidden lg:flex'" class="flex-col gap-y-3">
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
+            <a href="" class="font-normal hover:underline">Mithai Sharee</a>
+            <a href="" class="font-normal hover:underline">Pariza</a>
+            <a href="" class="font-normal hover:underline">Thin Kathan Punjabi</a>
+            <a href="" class="font-normal hover:underline">Ekfull</a>
+            <a href="" class="font-normal hover:underline">Kusek</a>
+            <a href="" class="font-normal hover:underline">Retail & Wholesale</a>
+            <a href="" class="font-normal hover:underline">Weekly Special</a>
           </div>
         </div>
         <div x-data="{shop: false}" class="col-span-1 flex flex-col gap-y-3 pb-2 border-b lg:border-none">
@@ -623,44 +623,45 @@
             </button>
           </div>
           <div :class="shop ?'flex' : 'hidden lg:flex'" class="flex-col gap-y-3">
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
+            <a href="" class="font-normal hover:underline">Amanath shah Lungi</a>
+            <a href="" class="font-normal hover:underline">Pakija</a>
+            <a href="" class="font-normal hover:underline">Mak</a>
+            <a href="" class="font-normal hover:underline">Mitali three piece</a>
+            <a href="" class="font-normal hover:underline">M/S Ashfia Fashion</a>
+            <a href="" class="font-normal hover:underline">Bonafied Moshari</a>
           </div>
         </div>
         <div x-data="{shop: false}" class="col-span-1 flex flex-col gap-y-3 pb-2 border-b lg:border-none">
           <div class="w-full flex items-center justify-between">
-            <span class="font-bold w-full">Shop</span>
+            <span class="font-bold w-full">Further Info.</span>
             <button @click="shop = !shop" class="lg:hidden">
                 <img :src="shop ? 'public/img/minus.svg' : 'public/img/plus.svg'" alt="">
             </button>
           </div>
           <div :class="shop ?'flex' : 'hidden lg:flex'" class="flex-col gap-y-3">
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
+            <a href="" class="font-normal hover:underline">About Gawsia</a>
+            <a href="" class="font-normal hover:underline">Contact Us</a>
+            <a href="" class="font-normal hover:underline">Return & Refund Policy</a>
+            <a href="" class="font-normal hover:underline">Privacy Policy</a>
+            <a href="" class="font-normal hover:underline">Terms & Conditions</a>
+            <a href="" class="font-normal hover:underline">Blog</a>
           </div>
         </div>
         <div x-data="{shop: false}" class="col-span-1 flex flex-col gap-y-3 pb-2 border-b lg:border-none">
           <div class="w-full flex items-center justify-between">
-            <span class="font-bold w-full">Shop</span>
+            <span class="font-bold w-full">Customer Service</span>
             <button @click="shop = !shop" class="lg:hidden">
                 <img :src="shop ? 'public/img/minus.svg' : 'public/img/plus.svg'" alt="">
             </button>
           </div>
           <div :class="shop ?'flex' : 'hidden lg:flex'" class="flex-col gap-y-3">
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
-            <span class="font-normal">Mithai Sharee</span>
+            <a href="" class="font-normal hover:underline">Gawsia Bazar</a>
+            <a href="" class="font-normal hover:underline">Marchant Registration from</a>
+            <a href="" class="font-normal hover:underline">Business with Gawsiabazar</a>
+            <a href="" class="font-normal hover:underline">Contact Us</a>
+            <a href="" class="font-normal hover:underline">FAQs</a>
+            <a href="" class="font-normal hover:underline">Cash on Delivery</a>
+            <a href="" class="font-normal hover:underline">Courier shipment & transport system</a>
           </div>
         </div>
         <div class="col-span-1 flex flex-col gap-y-4 pb-2">
