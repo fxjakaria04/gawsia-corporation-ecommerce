@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./public/css/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -150,7 +151,10 @@
           </div>
           <div class="w-full grid grid-cols-2 gap-0.5 ">
             <div class="col-span-1 bg-white flex flex-col items-center gap-y-2 p-1">
-              <img src="public/img/Shopper.svg" alt="">
+              <div class="h-8 w-6">
+                <img src="public/img/Shopper.svg" alt="" class="h-full w-full object-cover">
+              </div>
+              
               <span class="text-sm font-normal">Shopper</span>
             </div>
             <div class="col-span-1 bg-white flex flex-col items-center gap-y-2 p-1">
@@ -509,43 +513,17 @@
             </div>
           </div>
         </div>
+        
         <h2 class="uppercase text-center text-xl font-extrabold my-6">SHOPS We Love</h2>
         <div class="w-10/12 m-auto flex items-center justify-center gap-4 overflow-auto">
 
-          <div class="min-w-44 max-w-44 border pl-3 flex items-center justify-between rounded overflow-hidden gap-3">
-            <span class="font-[Aclonica] text-sm bg-gradient-to-r from-[#FD6169] to-[#C86DB5] bg-clip-text text-transparent">jakaria talukdar</span>
+          <a href="" class="min-w-44 max-w-44 border pl-3 flex items-center justify-between rounded overflow-hidden gap-3">
+            <span class="w-28 line-clamp-2 font-[Aclonica] text-sm bg-gradient-to-r from-[#FD6169] to-[#C86DB5] bg-clip-text text-transparent">jakaria talukdar jakaria talukdar</span>
             <div class="h-full w-16">
               <img src="public/img/cobra.png" alt="" class="h-full w-full object-cover">
             </div>
-          </div>
+          </a>
 
-          <div class="min-w-44 max-w-44 border pl-3 flex items-center justify-between rounded overflow-hidden gap-3">
-            <span class="font-[Aclonica] text-sm bg-gradient-to-r from-[#FD6169] to-[#C86DB5] bg-clip-text text-transparent">jakaria talukdar</span>
-            <div class="h-full w-16">
-              <img src="public/img/cobra.png" alt="" class="h-full w-full object-cover">
-            </div>
-          </div>
-
-          <div class="min-w-44 max-w-44 border pl-3 flex items-center justify-between rounded overflow-hidden gap-3">
-            <span class="font-[Aclonica] text-sm bg-gradient-to-r from-[#FD6169] to-[#C86DB5] bg-clip-text text-transparent">jakaria talukdar</span>
-            <div class="h-full w-16">
-              <img src="public/img/cobra.png" alt="" class="h-full w-full object-cover">
-            </div>
-          </div>
-
-          <div class="min-w-44 max-w-44 border pl-3 flex items-center justify-between rounded overflow-hidden gap-3">
-            <span class="font-[Aclonica] text-sm bg-gradient-to-r from-[#FD6169] to-[#C86DB5] bg-clip-text text-transparent">jakaria talukdar</span>
-            <div class="h-full w-16">
-              <img src="public/img/cobra.png" alt="" class="h-full w-full object-cover">
-            </div>
-          </div>
-
-          <div class="min-w-44 max-w-44 border pl-3 flex items-center justify-between rounded overflow-hidden gap-3">
-            <span class="font-[Aclonica] text-sm bg-gradient-to-r from-[#FD6169] to-[#C86DB5] bg-clip-text text-transparent">jakaria talukdar</span>
-            <div class="h-full w-16">
-              <img src="public/img/cobra.png" alt="" class="h-full w-full object-cover">
-            </div>
-          </div>
         </div>
         <div class="w-full text-center py-3 text-sm">
           <a href="#" class="text-gray-500 font-semibold underline">View All Shop ></a>
@@ -714,6 +692,30 @@
           <span class="font-normal text-sm text-[#232323]">© 2025, Gawsia Bazar. All rights reserved.</span>
           <img src="public/img/SSLCommerz.png" alt="">
         </div>
+      </div>
+      <!-- bottom navbar -->
+      <div class="sticky bg-white lg:hidden py-2 z-[52] bottom-0 w-full grid grid-cols-5 gap-1">
+        <a href="#" class="col-span-1 flex flex-col gap-y-2 items-center justify-between">
+          <img src="public/img/NavbarRes/homeRes.svg" alt="">
+          <span class="text-[10px] text-[#85278C]">Home</span>
+        </a>
+        <a href="#" class="col-span-1 flex flex-col gap-y-2 items-center justify-between">
+          <img src="public/img/NavbarRes/shopRes.svg" alt="">
+          <span class="text-[10px] text-[#CBCBCB]">Shops</span>
+        </a>
+        <a href="#" class="col-span-1 flex flex-col gap-y-2 items-center justify-between">
+          <img src="public/img/NavbarRes/CategoriesRes.svg" alt="">
+          <span class="text-[10px] text-[#CBCBCB]">Categories</span>
+        </a>
+        <a href="#" class="col-span-1 flex flex-col gap-y-2 items-center justify-between">
+          <img src="public/img/NavbarRes/AccountRes.svg" alt="">
+          <span class="text-[10px] text-[#CBCBCB]">Account</span>
+        </a>
+        <a href="#" class="col-span-1 flex flex-col gap-y-2 items-center justify-between">
+          <img src="public/img/NavbarRes/CartRes.svg" alt="">
+          <div class="absolute right-7 h-4 w-4 bg-white rounded-full border border-black flex items-center justify-center text-[10px]">99</div>
+          <span class="text-[10px] text-[#CBCBCB]">Cart</span>
+        </a>
       </div>
     
       <script>
