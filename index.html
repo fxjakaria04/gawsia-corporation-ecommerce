@@ -357,6 +357,7 @@
        </section>
        <!-- ad section -->
        <section class="w-full py-5">
+
         <div class="w-[98%] m-auto flex items-end flex-col lg:flex-row gap-x-10 gap-y-3 my-4">
           
           <div class="w-full lg:w-1/6 flex items-end justify-between">
@@ -394,84 +395,92 @@
 
 
         </div>
-        <div x-data="flowingSlider()" x-init="startAutoSlide()" class="parent relative overflow-hidden w-full">
-          <!-- Slider -->
-          <div class="flex transition-transform duration-700 ease-linear"
-              :style="'transform: translateX(-' + currentIndex * slideWidth + 'px)'">
-            <!-- Slides -->
-            <template x-for="(slide, index) in slides" :key="index">
-              <div :style="'width: ' + slideWidth + 'px'" class="h-auto flex-shrink-0 mx-2">
-                <!-- Card Content -->
-                <div id="child" x-data="{cardHover: false}" class="relative border p-3 rounded-md flex flex-col gap-2">
-                  <div class="absolute -top-1 left-2/4 -translate-x-2/4" style="background: url(public/img/topOfCardCarveDesign.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
-                    <span class="text-white text-xs font-bold p-4">03% OFF</span>
-                  </div>
-                  <div class="absolute hidden lg:block bg-[#71397C] rounded-l-lg top-5 right-0">
-                    <span class="text-white text-xs font-bold lg:p-4 pl-4" style="text-shadow: 0px 0px 5px white;">03% OFF</span>
-                  </div>
-                  <button x-show="cardHover" @mouseover="cardHover = true" class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick View</button>
-                  <span class="absolute hidden lg:inline-block px-3.5 py-1 rounded-md text-sm text-white bg-[#BC37C6]">Sale</span>
-                  <a @mouseover="cardHover = true" @mouseout="cardHover = false" href="" class="h-28 lg:h-[303px] w-full">
-                    <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
-                  </a>
-                  <form action="" class="w-full flex flex-col items-start gap-2">
-                    <button class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In Stock</button>
-                    <h2 class="line-clamp-2 font-light md:font-medium">Form success</h2>
-                    <div class="w-full flex items-center gap-3">
-                      <span class="text-[#505050] font-normal">$<del class="font-bold lg:font-normal">99</del></span>
-                      <span class="text-[#E10600]">$<span class="font-bold">455</span></span>
-                      <span class="text-[10px] font-bold text-[#00BEFF] border border-[#00BEFF] px-0.5 rounded-md">New</span>
-                    </div>
-                    <div class="w-full">
-                      <div class="flex text-lg gap-3">
-                        <div class="flex items-center space-x-4">
-                          <label class="flex flex-col items-center">
-                            <input type="radio" name="color" value="black" class="hidden peer" />
-                            <span
-                              class="w-6 h-6 rounded-full bg-black border-2 border-white ring-2 ring-gray-300 peer-checked:ring-black peer-checked:ring-4"
-                            ></span>
-                          </label>
-                          <label class="flex flex-col items-center">
-                            <input type="radio" name="color" value="white" class="hidden peer" />
-                            <span
-                              class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-500 peer-checked:ring-4"
-                            ></span>
-                          </label>
-                          <label class="flex flex-col items-center">
-                            <input type="radio" name="color" value="blue" class="hidden peer" />
-                            <span
-                              class="w-6 h-6 rounded-full bg-gray-600 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-700 peer-checked:ring-4"
-                            ></span>
-                          </label>
-                          <label class="flex flex-col items-center">
-                            <input type="radio" name="color" value="orange" class="hidden peer" />
-                            <span
-                              class="w-6 h-6 rounded-full bg-orange-400 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-orange-500 peer-checked:ring-4"
-                            ></span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="w-full flex items-center justify-between gap-2.5">
-                      <button class="border border-black py-1 px-4 rounded-3xl flex-grow whitespace-nowrap">Quick Add</button>
-                      <button class="bg-[#e9e6e6] rounded-full p-2">
-                        <img src="public/img/heard.svg" alt="">
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </template>
+        <div class="w-[98%] m-auto grid grid-cols-4 gap-2">
+          <div class="col-span-1 h-[31rem] rounded-xl overflow-hidden">
+            <img src="public/img/lomba-ad.png" alt="" class="h-full w-full object-contain">
           </div>
-        
-          <!-- Indicators -->
-          <button @click="prevSlide" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md z-10">
-            <span>&lt;</span>
-          </button>
-          <button @click="nextSlide" class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md z-10">
-            <span>&gt;</span>
-          </button>
+          <div class="col-span-3">
+            <div x-data="flowingSlider()" x-init="startAutoSlide()" class="parent relative overflow-hidden w-full">
+              <!-- Slider -->
+              <div class="flex transition-transform duration-700 ease-linear"
+                  :style="'transform: translateX(-' + currentIndex * slideWidth + 'px)'">
+                <!-- Slides -->
+                <template x-for="(slide, index) in slides" :key="index">
+                  <div :style="'width: ' + slideWidth + 'px'" class="h-auto flex-shrink-0 mx-2">
+                    <!-- Card Content -->
+                    <div id="child" x-data="{cardHover: false}" class="relative border p-3 rounded-md flex flex-col gap-2">
+                      <div class="absolute -top-1 left-2/4 -translate-x-2/4" style="background: url(public/img/topOfCardCarveDesign.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
+                        <span class="text-white text-xs font-bold p-4">03% OFF</span>
+                      </div>
+                      <div class="absolute hidden lg:block bg-[#71397C] rounded-l-lg top-5 right-0">
+                        <span class="text-white text-xs font-bold lg:p-4 pl-4" style="text-shadow: 0px 0px 5px white;">03% OFF</span>
+                      </div>
+                      <button x-show="cardHover" @mouseover="cardHover = true" class="absolute top-32 hidden lg:inline-block whitespace-nowrap rounded-3xl font-semibold left-2/4 -translate-x-2/4 text-white bg-[#4B125C] hover:bg-[#75258d] py-3 px-10">Quick View</button>
+                      <span class="absolute hidden lg:inline-block px-3.5 py-1 rounded-md text-sm text-white bg-[#BC37C6]">Sale</span>
+                      <a @mouseover="cardHover = true" @mouseout="cardHover = false" href="" class="h-28 lg:h-[303px] w-full">
+                        <img src="public/img/banner-1.png" alt="" class="h-full w-full object-contain">
+                      </a>
+                      <form action="" class="w-full flex flex-col items-start gap-2">
+                        <button class="border border-[#32A071] text-[#32A071] px-2 rounded-xl text-xs font-medium">In Stock</button>
+                        <h2 class="line-clamp-2 font-light md:font-medium">Form success</h2>
+                        <div class="w-full flex items-center gap-3">
+                          <span class="text-[#505050] font-normal">$<del class="font-bold lg:font-normal">99</del></span>
+                          <span class="text-[#E10600]">$<span class="font-bold">455</span></span>
+                          <span class="text-[10px] font-bold text-[#00BEFF] border border-[#00BEFF] px-0.5 rounded-md">New</span>
+                        </div>
+                        <div class="w-full">
+                          <div class="flex text-lg gap-3">
+                            <div class="flex items-center space-x-4">
+                              <label class="flex flex-col items-center">
+                                <input type="radio" name="color" value="black" class="hidden peer" />
+                                <span
+                                  class="w-6 h-6 rounded-full bg-black border-2 border-white ring-2 ring-gray-300 peer-checked:ring-black peer-checked:ring-4"
+                                ></span>
+                              </label>
+                              <label class="flex flex-col items-center">
+                                <input type="radio" name="color" value="white" class="hidden peer" />
+                                <span
+                                  class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-500 peer-checked:ring-4"
+                                ></span>
+                              </label>
+                              <label class="flex flex-col items-center">
+                                <input type="radio" name="color" value="blue" class="hidden peer" />
+                                <span
+                                  class="w-6 h-6 rounded-full bg-gray-600 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-gray-700 peer-checked:ring-4"
+                                ></span>
+                              </label>
+                              <label class="flex flex-col items-center">
+                                <input type="radio" name="color" value="orange" class="hidden peer" />
+                                <span
+                                  class="w-6 h-6 rounded-full bg-orange-400 border-2 border-white ring-2 ring-gray-300 peer-checked:ring-orange-500 peer-checked:ring-4"
+                                ></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-full flex items-center justify-between gap-2.5">
+                          <button class="border border-black py-1 px-4 rounded-3xl flex-grow whitespace-nowrap">Quick Add</button>
+                          <button class="bg-[#e9e6e6] rounded-full p-2">
+                            <img src="public/img/heard.svg" alt="">
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </template>
+              </div>
+            
+              <!-- Indicators -->
+              <button @click="prevSlide" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md z-10">
+                <span>&lt;</span>
+              </button>
+              <button @click="nextSlide" class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md z-10">
+                <span>&gt;</span>
+              </button>
+            </div>
+          </div>
         </div>
+        
 
 
         </div>
