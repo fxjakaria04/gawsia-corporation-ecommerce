@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="public/css/output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body class="flex items-center justify-center my-10 w-screen bg-gray-300">
     <style>
@@ -11,117 +15,90 @@
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
-    <section class="w-10/12 p-5 bg-white rounded-md flex items-center justify-center flex-col">
-        <div class="flex flex-col items-center gap-y-2">
-            <img src="public/img/gawsia-logo-small.png" alt="">
-            <h1 class="text-2xl font-bold text-[#111827]">Become a Register</h1>
+    <section class="w-7/12 bg-white rounded-[20px] overflow-hidden flex">
+        <div class="responsive w-1/2 bg-[#FBF7FC]">
+            <div class="flex items-center justify-center text-center flex-col gap-y-4 px-20">
+                <img src="public/img/login-avatar.png" alt="">
+                <h1 class="font-bold text-[22px] mt-6">Quick & easy ordering process</h1>
+                <p class="text-[#5E6F88] text-sm font-light">Now you can order your beautiful Three- Piece from GawsiaBazar. We provide all the Sharee you need.</p>
+            </div>
+            <div class="flex items-center justify-center text-center flex-col gap-y-4 px-20">
+                <img src="public/img/login-avatar.png" alt="">
+                <h1 class="font-bold text-[22px] mt-6">Quick & easy ordering process</h1>
+                <p class="text-[#5E6F88] text-sm font-light">Now you can order your beautiful Three- Piece from GawsiaBazar. We provide all the Sharee you need.</p>
+            </div>
+            <div class="flex items-center justify-center text-center flex-col gap-y-4 px-20">
+                <img src="public/img/login-avatar.png" alt="">
+                <h1 class="font-bold text-[22px] mt-6">Quick & easy ordering process</h1>
+                <p class="text-[#5E6F88] text-sm font-light">Now you can order your beautiful Three- Piece from GawsiaBazar. We provide all the Sharee you need.</p>
+            </div>
         </div>
-        <div class="w-full border-b relative py-3">
-            <span class="absolute left-2/4 -translate-x-2/4 bg-white px-4">Or</span>
+        <div id="numberDiv" class="w-1/2 bg-white flex flex-col justify-center gap-y-3 py-8 px-9">
+            <h1 class="text-[#111827] text-2xl font-bold">Login</h1>
+            <p class="text-[#718096] text-sm">Login to make an order, access your orders, special offers and more!</p>
+            <!-- replace div with form tag in line 24 --> 
+            <div class="flex flex-col items-start gap-y-3"> 
+                <label for="" class="text-[#111827] font-medium">Phone Number</label>
+                <input type="number" name="" id="numberField" value="88" class="w-full p-2 border border-[#EEEFF2] rounded-lg outline-none text-[#111827]">
+                <button type="submit" id="submit-btn" class="bg-[#88288F] w-full text-white rounded-md py-3">Send</button>
+            </div>
+            <div class="relative flex items-center justify-center border-b mt-10 mb-3">
+                <span class="absolute bg-white px-3">or</span>
+            </div>
+            <button class="m-auto border p-2 rounded-md">
+                <img src="public/img/google.svg" alt="">
+            </button>
+            <span class="text-sm text-[#718096] mt-5">By continuing you agree to <a href="#" class="text-[#88288F] font-medium">Terms & Conditions,</a><br>
+                <a href="#" class="text-[#88288F] font-medium">Privacy Policy</a> & <a href="#" class="text-[#88288F] font-medium">Refund-Return Policy</a></span>
         </div>
-        <form class="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 py-5">
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Shop Name</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="text" name="" id="shopName" placeholder="Enter name" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/shopNameInput.svg" alt="">
-                </div>
+        <div id="otpDiv" class="w-1/2 bg-white flex flex-col justify-center gap-y-3 py-8 px-9">
+            <h1 class="text-[#111827] text-2xl font-bold">Login</h1>
+            <p class="text-[#718096] text-sm">Login to make an order, access your orders, special offers and more!</p>
+            <form action="" class="flex flex-col items-start gap-y-3">
+                <label for="" class="text-[#111827] font-medium">Phone Number</label>
+                <input type="number" name="" id="otp-number" readonly value="88" class="w-full p-2 border border-[#EEEFF2] rounded-lg outline-none text-[#A0AEC0]">
+                <input type="number" name="" id="" placeholder="Enter your OTP number" class="w-full p-2 border border-[#EEEFF2] rounded-lg outline-none text-[#111827]">
+                <button type="submit" id="submit-btn" class="bg-[#88288F] w-full text-white rounded-md py-3">Send</button>
+            </form>
+            <div class="relative flex items-center justify-center border-b mt-10 mb-3">
+                <span class="absolute bg-white px-3">or</span>
             </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Owner Name</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="text" name="" id="shopName" placeholder="Enter Owner name" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/ownerName.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Email Id</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="email" name="" id="shopName" placeholder="Enter email" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/email.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Mobile No.</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="number" name="" id="shopName" placeholder="Enter mobile number" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/phone.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Logo</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="file" name="" id="shopName" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Bank Name</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="text" name="" id="shopName" placeholder="Enter Bank Name" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/BankName.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Bank Account Name</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="text" name="" id="shopName" placeholder="Enter Bank Account Name" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/ownerName.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Account Number</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="number" name="" id="shopName" placeholder="Enter account Number" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/BankName.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Branch name</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="number" name="" id="shopName" placeholder="Enter branch Name" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/ownerName.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Facebook Page</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="number" name="" id="shopName" placeholder="Enter Facebook Page" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/ownerName.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Password</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="password" name="" id="shopName" placeholder="Enter password" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/password.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Confirm Password</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <input type="password" name="" id="shopName" placeholder="Enter confirm password" class="flex-grow text-sm font-normal text-[#6B7280] outline-none">
-                    <img src="public/img/password.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-2 flex flex-col gap-y-2">
-                <label for="shopName" class="text-sm text-gray-800">Confirm Password</label>
-                <div class="flex items-center border gap-2 py-[15px] px-[17px] rounded-md">
-                    <textarea name="" id="" placeholder="Enter confirm password" class="flex-grow text-sm font-normal text-[#6B7280] outline-none min-h-10"></textarea>
-                   
-                    <img src="public/img/locationHome.svg" alt="">
-                </div>
-            </div>
-            <div class="col-span-2 flex gap-2 text-sm">
-                <input type="checkbox" name="" id="termsAndConditions">
-                <label for="termsAndConditions">
-                    <span>I agree to the</span>
-                    <a href="#" class="text-[#85278C]">Terms and Conditions</a>
-                </label>
-            </div>
-            <div class="col-span-2 flex justify-end gap-2 text-sm">
-                <button type="submit" class="text-sm font-bold py-3 px-6 rounded-md bg-[#88288F] hover:bg-[#a33daa] transitions text-white">sign up</button>
-            </div>
-        </form>
+            <button class="m-auto border p-2 rounded-md">
+                <img src="public/img/google.svg" alt="">
+            </button>
+            <span class="text-sm text-[#718096] mt-5">By continuing you agree to <a href="#" class="text-[#88288F] font-medium">Terms & Conditions,</a><br>
+                <a href="#" class="text-[#88288F] font-medium">Privacy Policy</a> & <a href="#" class="text-[#88288F] font-medium">Refund-Return Policy</a></span>
+        </div>
     </section>
+
+    <script>
+        const submitBtn = document.getElementById('submit-btn');
+        const numberDiv = document.getElementById('numberDiv');
+        const otpDiv = document.getElementById('otpDiv');
+        const otpNumber = document.getElementById('otp-number');
+        otpDiv.style.display = 'none';
+        submitBtn.addEventListener('click', () => {
+            numberDiv.style.display = 'none'
+            const phoneNumber = document.getElementById('numberField').value;
+
+            otpDiv.style.display = 'flex';
+
+            otpNumber.value = phoneNumber;
+            console.log(phoneNumber);
+            
+        })
+    </script>
+
+    <script>
+        $('.responsive').slick({
+        dots: true,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        });
+    </script>
 </body>
 </html>
